@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 1</title>
+  </head>
+  <body>
+    <h3>fieldset</h3>
+    <form>
+      <fieldset>
+        <legend>Informasi Pribadi</legend>
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" /><br />
+      </fieldset>
+    </form>
+    <br />
+    <p>
+      Tag fieldset digunakan untuk mengelompokkan beberapa elemen dalam sebuah
+      formulir HTML dan membentuk sebuah "fieldset" atau "kelompok" dari
+      elemen-elemen tersebut. Biasanya digunakan bersama dengan tag legend.
+    </p>
+    <br />
+
+    <h3>legend</h3>
+    <fieldset>
+      <legend>Informasi Pribadi</legend>
+      <!-- Elemen-elemen formulir di sini -->
+    </fieldset>
+    <br />
+    <p>
+      Tag legend digunakan untuk memberikan judul atau keterangan untuk sebuah
+      "fieldset". Tag ini biasanya ditempatkan di dalam tag fieldset.
+    </p>
+    <br />
+
+    <h3>datalist</h3>
+    <label for="browser">Pilih browser:</label>
+    <input list="browsers" id="browser" name="browser" />
+    <datalist id="browsers">
+      <option value="Chrome"></option>
+      <option value="Firefox"></option>
+      <option value="Safari"></option>
+      <option value="Edge"></option>
+      <option value="Opera"></option>
+    </datalist>
+    <br />
+    <p>
+      Tag datalist digunakan untuk menentukan pilihan atau opsi dalam elemen
+      input. Datalist dapat menampilkan daftar pilihan saat pengguna mulai
+      mengetik di dalam elemen input yang terhubung dengan datalist.
+    </p>
+    <br />
+
+    <!-- <h3>output</h3>
+    <form oninput="result.value = parseInt(a.value) + parseInt(b.value)">
+      <input type="number" id="a" name="a" /> +
+      <input type="number" id="b" name="b" /> =
+      <output name="result"></output>
+    </form>
+    <br />
+    <p>
+      Tag output digunakan untuk menampilkan hasil dari suatu perhitungan atau
+      proses yang dilakukan oleh script.
+    </p>
+    <br /> -->
+
+    <!-- <h3>option</h3>
+    <select>
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </select>
+    <br />
+    <p>
+      Tag option digunakan untuk mendefinisikan opsi dalam sebuah elemen select,
+      optgroup, atau datalist. Setiap tag option biasanya memiliki atribut value
+      yang merupakan nilai yang akan dikirimkan ke server saat formulir
+      diserahkan.
+    </p>
+    <br /> -->
+
+    <h3>optgroup</h3>
+    <select>
+      <optgroup label="Mobil Swedia">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+      </optgroup>
+      <optgroup label="Mobil Jerman">
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </optgroup>
+    </select>
+    <br />
+    <!-- <p>
+      Tag optgroup digunakan untuk mengelompokkan beberapa opsi dalam sebuah
+      elemen select. Ini membantu dalam mengatur opsi-opsi menjadi kelompok yang
+      lebih terorganisir.
+    </p> -->
+    <br>
+  </body>
+</html>

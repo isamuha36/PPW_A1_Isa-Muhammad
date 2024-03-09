@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      @media screen and (max-width: 500px) {
+        .form .column {
+          flex-wrap: wrap;
+        }
+      }
+
+      .form button {
+        margin-top: 20px;
+        height: 55px;
+        width: 100%;
+        color: #fff;
+        font-size: 1rem;
+        cursor: pointer;
+        font-weight: 400;
+        border: none;
+        border-radius: 6px;
+        background-color: #007bff;
+        transition: all 0.2 ease-in-out;
+      }
+
+      .form input:focus {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .form select:focus {
+        box-shadow: 0 0 20px rgb(0, 0, 0, 0.1);
+      }
+
+      .form textarea:focus {
+        box-shadow: 0 0 20px rgb(0, 0, 0, 0.1);
+      }
+
+      .form button:hover {
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #eaeaea;
+      padding: 20px;
+    "
+  >
+    <section
+      style="
+        position: relative;
+        max-width: 700px;
+        width: 100%;
+        background: #fff;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgb(0, 0, 0, 0.1);
+      "
+    >
+      <header style="text-align: center">
+        <img style="width: 100%" src="./Header.svg" alt="Header" />
+      </header>
+      <form class="form" style="margin-top: 30px">
+        <div style="width: 100%; margin-top: 20px">
+          <label for="name">Nama:</label>
+          <input
+            style="
+              position: relative;
+              height: 50px;
+              width: 100%;
+              outline: none;
+              font-size: 1rem;
+              color: #707070;
+              margin-top: 8px;
+              border: 1px solid #ddd;
+              border-radius: 6px;
+              padding: 15px;
+            "
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Masukan nama lengkap"
+            required
+          />
+        </div>
+        <div style="width: 100%; margin-top: 20px">
+          <label for="email">Alamat Email:</label>
+          <input
+            style="
+              position: relative;
+              height: 50px;
+              width: 100%;
+              outline: none;
+              font-size: 1rem;
+              color: #707070;
+              margin-top: 8px;
+              border: 1px solid #ddd;
+              border-radius: 6px;
+              padding: 15px;
+            "
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Masukan alamat email"
+            required
+          />
+        </div>
+
+        <div class="column" style="display: flex; column-gap: 15px">
+          <div style="width: 100%; margin-top: 20px">
+            <label for="alamat">Domisili:</label>
+            <input
+              style="
+                position: relative;
+                height: 50px;
+                width: 100%;
+                outline: none;
+                font-size: 1rem;
+                color: #707070;
+                margin-top: 8px;
+                border: 1px solid #ddd;
+                border-radius: 6px;
+                padding: 15px;
+              "
+              type="text"
+              id="alamat"
+              name="alamat"
+              placeholder="Masukan domisili"
+              required
+            />
+          </div>
+          <div style="width: 100%; margin-top: 20px">
+            <label for="phone">Nomor Telepon:</label>
+            <input
+              style="
+                position: relative;
+                height: 50px;
+                width: 100%;
+                outline: none;
+                font-size: 1rem;
+                color: #707070;
+                margin-top: 8px;
+                border: 1px solid #ddd;
+                border-radius: 6px;
+                padding: 15px;
+              "
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+62-0000-0000-0000"
+              required
+            />
+          </div>
+        </div>
+
+        <div style="margin-top: 20px">
+          <p style="font-size: 1rem; font-weight: 4; margin-bottom: 8px">
+            Jenis Kelamin:
+          </p>
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              column-gap: 250px;
+              flex-wrap: wrap;
+              justify-content: space-evenly;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                column-gap: 15px;
+                flex-wrap: wrap;
+              "
+            >
+              <input
+                style="cursor: pointer"
+                type="radio"
+                name="kelamin"
+                id="laki"
+                value="Laki-laki"
+                required
+              />
+              <label style="cursor: pointer" for="laki">Laki-laki</label>
+            </div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                column-gap: 15px;
+                flex-wrap: wrap;
+              "
+            >
+              <input
+                style="cursor: pointer"
+                type="radio"
+                name="kelamin"
+                id="perempuan"
+                value="Perempuan"
+                required
+              />
+              <label style="cursor: pointer" for="perempuan">Perempuan</label>
+            </div>
+          </div>
+        </div>
+
+        <div style="width: 100%; margin-top: 20px">
+          <label for="waktu">Kapan bergabung?</label>
+          <input
+            style="
+              position: relative;
+              height: 50px;
+              width: 100%;
+              outline: none;
+              font-size: 1rem;
+              color: #707070;
+              margin-top: 8px;
+              border: 1px solid #ddd;
+              border-radius: 6px;
+              padding: 15px;
+            "
+            type="datetime-local"
+            name="waktu"
+            id="waktu"
+            required
+          />
+        </div>
+
+        <div style="width: 100%; margin-top: 20px">
+          <label for="tingkatan">Pilih tingkatan:</label>
+          <select
+            style="
+              position: relative;
+              height: 50px;
+              width: 100%;
+              outline: none;
+              font-size: 1rem;
+              color: #707070;
+              margin-top: 8px;
+              border: 1px solid #ddd;
+              border-radius: 6px;
+              padding: 15px;
+            "
+            id="tingkatan"
+            name="tingkatan"
+            required
+          >
+            <option value="" hidden>Sesuaikan dengan kemempuanmu</option>
+            <option value="Expert" id="tingkatan">Expert</option>
+            <option value="Intermediate" id="tingkatan">Intermediate</option>
+            <option value="Beginner" id="tingkatan">Beginner</option>
+          </select>
+        </div>
+
+        <div style="width: 100%; margin-top: 20px">
+          <p
+            style="
+              font-size: 1rem;
+              font-weight: 4;
+              margin-bottom: 8px;
+              display: flex;
+              align-items: center;
+              column-gap: px;
+              flex-wrap: wrap;
+            "
+          >
+            Kursus yang dipilih:
+          </p>
+          <div
+            class="column"
+            style="display: flex; justify-content: space-between"
+          >
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                column-gap: 15px;
+                flex-wrap: wrap;
+              "
+            >
+              <input
+                style="cursor: pointer"
+                type="checkbox"
+                id="html"
+                name="language"
+                value="HTML"
+              />
+              <label style="cursor: pointer" for="html">HTML</label>
+            </div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                column-gap: 15px;
+                flex-wrap: wrap;
+              "
+            >
+              <input
+                style="cursor: pointer"
+                type="checkbox"
+                id="css"
+                name="language"
+                value="CSS"
+              />
+              <label style="cursor: pointer" for="css">CSS</label>
+            </div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                column-gap: 15px;
+                flex-wrap: wrap;
+              "
+            >
+              <input
+                style="cursor: pointer"
+                type="checkbox"
+                id="js"
+                name="language"
+                value="JS"
+              />
+              <label style="cursor: pointer" for="js">JavaScript</label>
+            </div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                column-gap: 15px;
+                flex-wrap: wrap;
+              "
+            >
+              <input
+                style="cursor: pointer"
+                type="checkbox"
+                id="php"
+                name="language"
+                value="PHP"
+              />
+              <label style="cursor: pointer" for="php">PHP</label>
+            </div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                column-gap: 15px;
+                flex-wrap: wrap;
+              "
+            >
+              <input
+                style="cursor: pointer"
+                type="checkbox"
+                id="python"
+                name="language"
+                value="PYTHON"
+              />
+              <label style="cursor: pointer" for="python">Python</label>
+            </div>
+          </div>
+        </div>
+
+        <div style="width: 100%; margin-top: 20px">
+          <label for="screenshot">Bukti SS:</label>
+          <input type="file" id="screenshot" name="SS" value="Bukti SS" />
+        </div>
+
+        <div style="width: 100%; margin-top: 20px">
+          <label for="massage">Harapan Kamu:</label>
+          <textarea
+            style="
+              position: relative;
+              height: 100px;
+              width: 100%;
+              outline: none;
+              font-size: 1rem;
+              color: #707070;
+              margin-top: 8px;
+              border: 1px solid #ddd;
+              border-radius: 6px;
+              padding: 15px;
+            "
+            name="harapan"
+            id="massage"
+            placeholder="Tuliskan harapan kamu di sini ^_^"
+            required
+          ></textarea>
+        </div>
+
+        <button class="button">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
