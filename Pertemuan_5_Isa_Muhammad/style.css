@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-color: orange;
+  justify-content: center;
+  display: flex;
+  padding: 50px;
+}
+
+nav {
+  background-color: aquamarine;
+  justify-content: center;
+  display: flex;
+  padding: 30px;
+}
+
+aside {
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  float: right;
+  height: 400px;
+}
+
+main {
+  background-color: purple;
+  color: white;
+  width: 50%;
+  height: 400px;
+}
+
+.h3-main {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  padding-top: 30px;
+}
+
+section {
+  background-color: yellow;
+  color: black;
+  padding: 20px;
+  margin: 50px;
+}
+
+.h4-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+article {
+  background-color: pink;
+  padding: 10px;
+}
+
+.h5-article {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  background-color: orange;
+  justify-content: center;
+  display: flex;
+  padding: 50px;
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 3. Mengganti ackground dengan gambar css */
+      body {
+        background-image: url("img.jpg");
+        background-repeat: no-repeat;
+        background-position: right top;
+      }
+
+      /* Mengganti warna pada tulisan di CSS */
+      p {
+        color: blue;
+      }
+
+      p.solid {
+        border-style: solid;
+      }
+      p.dotted {
+        border-style: dotted;
+      }
+      p.dashed {
+        border-style: dashed;
+      }
+      p.double {
+        border-style: double;
+      }
+      p.groove {
+        border-style: groove;
+      }
+      p.ridge {
+        border-style: ridge;
+      }
+      p.inset {
+        border-style: inset;
+      }
+      p.outset {
+        border-style: outset;
+      }
+      p.none {
+        border-style: none;
+      }
+      p.hidden {
+        border-style: hidden;
+      }
+      p.mix {
+        border-style: dotted dashed solid double;
+      }
+
+      .padding-all {
+        border: 1px solid violet;
+        padding: 10px 5px 2px 20px;
+      }
+      .padding-each {
+        border: 1px solid black;
+        padding-top: 5px;
+        padding-right: 10px;
+        padding-bottom: 15px;
+        padding-left: 25px;
+      }
+
+      .margin-all {
+        border: 1px solid violet;
+        margin: 10px 5px 2px 20px;
+      }
+      .margin-each {
+        border: 1px solid black;
+        margin-top: 5px;
+        margin-right: 40px;
+        margin-bottom: 15px;
+        margin-left: 25px;
+      }
+
+      .p7 {
+        border: 1px solid black;
+        padding: 5px;
+      }
+      .wide {
+        width: 300px;
+      }
+      .narrow {
+        width: 50px;
+      }
+
+      .p8 {
+        border: 1px solid black;
+        padding: 5px;
+      }
+      .high {
+        height: 300px;
+      }
+      .low {
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 2. Mengganti background di CSS -->
+    <p style="background-color: tomato">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi,
+      voluptatem.
+    </p>
+
+    <!-- 4. Mengimplementasikan jenis Border -->
+    <h1>Jenis jenis Border CSS</h1>
+
+    <p class="solid">Border solid = lurus</p>
+    <p class="dotted">Border dotted = titik titik</p>
+    <p class="dashed">Border dashed = garis terpisah</p>
+    <p class="double">Border double = ada dua border seperti kotak.</p>
+    <p class="groove">Border groove</p>
+    <p class="ridge">Border ridge</p>
+    <p class="inset">Border Inset.</p>
+    <p class="outset">Border Outset.</p>
+    <p class="none">Tanpa Border.</p>
+    <p class="hidden">Border tesembunyi.</p>
+    <p class="mix">Border campuran.</p>
+
+    <!-- 5. Membuat padding pada tiap sisi -->
+    <p class="padding-all">Aku adalah tag p dengan padding</p>
+    atau
+    <p class="padding-each">Aku adalah tag p dengan padding</p>
+
+    <!-- 6. Memberi margin pada tip sisi -->
+    <p class="margin-all">Aku adalah tag p dengan margin</p>
+    <p class="margin-each">Aku adalah tag p dengan margin</p>
+
+    <!-- 7. Mengatur Lebar Elemen -->
+    <p class="p7">Aku adalah tag p tanpa lebar</p>
+    <p class="p wide">Aku adalah tag p wide</p>
+    <p class="p narrow">Aku adalah tag p narrow</p>
+
+    <!-- 8. Menggatur Tinggi ELemen -->
+    <p class="p8">Aku adalah tag p tanpa lebar</p>
+    <p class="p high">Aku adalah tag p high</p>
+    <p class="p low">Aku adalah tag p low</p>
+
+    <!-- 9. Mendekorasi Text -->
+    <p style="text-decoration: overline">Saya overline</p>
+    <p style="text-decoration: line-through">Saya line-through</p>
+    <p style="text-decoration: underline">Saya underline</p>
+    <p style="text-decoration: line-through; text-decoration-color: yellow">
+      Saya line-through
+    </p>
+    <p
+      style="
+        text-decoration: line-through;
+        text-decoration-color: yellow;
+        text-decoration-style: wavy;
+      "
+    >
+      Saya line-through wavy
+    </p>
+    <p
+      style="
+        text-decoration: line-through;
+        text-decoration-color: aqua;
+        text-decoration-style: dotted;
+      "
+    >
+      Saya line-through dotted
+    </p>
+
+    <!-- 10. Mentransformasikan Text -->
+    <p style="text-transform: uppercase">Text dengan uppercase</p>
+    <p style="text-transform: lowercase">Text dengan lowercase</p>
+    <p style="text-transform: capitalize">Text dengan Capitalize</p>
+  </body>
+</html>
