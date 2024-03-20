@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Layout</title>
+    <style>
+        /* Default styles */
+        .container {
+            width: 100%;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Media query for screens smaller than 600px */
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+        }
+
+        /* Media query for screens between 600px and 1200px */
+        @media (min-width: 600px) and (max-width: 1200px) {
+            .container {
+                padding: 15px;
+            }
+        }
+
+        /* Media query for screens larger than 1200px */
+        @media (min-width: 1200px) {
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Your content goes here -->
+    </div>
+</body>
+</html>
