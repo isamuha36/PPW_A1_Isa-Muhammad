@@ -1,41 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Responsive Layout</title>
+    <title>Web Responsif</title>
     <style>
-        /* Default styles */
         .container {
-            width: 100%;
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
-        /* Media query for screens smaller than 600px */
-        @media (max-width: 600px) {
-            .container {
-                padding: 10px;
+        .content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .image {
+            flex: 1;
+            max-width: 50%;
+        }
+
+        .description {
+            flex: 1;
+            max-width: 50%;
+            padding: 0 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
             }
-        }
 
-        /* Media query for screens between 600px and 1200px */
-        @media (min-width: 600px) and (max-width: 1200px) {
-            .container {
-                padding: 15px;
-            }
-        }
-
-        /* Media query for screens larger than 1200px */
-        @media (min-width: 1200px) {
-            .container {
-                padding: 20px;
+            .image, .description {
+                max-width: 100%;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Your content goes here -->
+        <div class="content">
+            <div class="image">
+                <img src="gambar.jpg" alt="Gambar">
+            </div>
+            <div class="description">
+                <p>Deskripsi gambar.</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
