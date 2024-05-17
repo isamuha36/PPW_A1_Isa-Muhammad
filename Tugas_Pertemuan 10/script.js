@@ -1,0 +1,1 @@
+console.log("Ini adalah pesan dari file eksternal script.js");
